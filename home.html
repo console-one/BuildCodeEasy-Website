@@ -1,0 +1,1326 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildCodeEasy - Home</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+
+		
+<style>
+	
+html {
+    scroll-behavior: smooth;
+}
+
+/* Particles */
+
+#particles-js-hero, #particles-js-curriculum, #particles-js-courses, #particles-js-faq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* End of Particles */
+
+/* Hero Section */
+	
+.py-5 {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+/* End of Hero Section */
+	
+/* Waves */
+	
+.waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;  /* Increase this if you want a taller wave. */
+}
+
+.waves-container {
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+.parallax>use {
+    animation: move-forever 30s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 10s;  /* Adjusted from 7s */
+    fill: rgba(255,165,0,0.7);
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 15s;  /* Adjusted from 10s */
+    fill: rgba(255,165,0,0.5);
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 20s;  /* Adjusted from 13s */
+    fill: rgba(255,140,0,0.3);
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 25s;  /* Adjusted from 20s */
+    fill: #FF8B28;
+}
+
+.waves-flipped .waves {
+    transform: scaleY(-1);
+}
+
+@keyframes move-forever {
+   	0% {
+    	transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+}
+
+/* End of Waves */
+	
+/* Features Section */
+
+.rounded-card {
+    border-radius: 20px;  /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+    overflow: hidden;  /* Ensures inner content also gets rounded */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+	
+.card-body {
+    padding: 40px 20px;
+}
+	
+.card.rounded-card {
+    position: relative; /* Make the card position relative */
+    border-radius: 20px; /* This will give rounded corners to the card */
+}
+
+.card.rounded-card:hover {
+    transform: scale(1.05); /* scales the card up by 5% on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* more pronounced shadow on hover */
+}
+
+.small-image {
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+    width: 50px;  /* Adjust the width as required */
+    height: 50px; /* Adjust the height as required */
+    border-radius: 10px; /* Half of the width and height for a circular image */
+    transition: box-shadow 0.3s ease; /* Added transition for shadow on hover */
+}
+
+/* End of Features Section */
+
+/* Curriclum Section */
+	
+.curriculum-section {
+    position: relative;
+	  padding: 50px 0;
+	 	z-index: 1;
+}
+
+.curriculum-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.curriculum-badge {
+    display: inline-block;
+    background-color: #eee;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 2px solid orange; /* This line gives the orange outline */
+}
+
+.curriculum-content h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature h3 {
+    display: inline-block;
+    vertical-align: middle;
+}
+	
+	
+	
+/* End of Curriclum Section */
+
+	
+/* Courses Section */
+	
+.payment {
+    position: relative;
+	  padding: 50px 0;
+	 	z-index: 1;
+}
+	
+.intro-graphic {
+    background-color: #F9F9F9;
+    border: 2px solid orange;
+    border-radius: 10px; /* This gives rounded corners if you want, can be adjusted or removed */
+	 	padding-left: 30px; 
+		padding-top: 30px; 
+}
+
+.intro-image {
+    width: 50%; /* Adjust the percentage as needed */
+    max-width: 100%; /* Ensures the image won't exceed its natural dimensions */
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
+    height: 100%;             /* Optional: only if you want the div to take up the full height */
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for the scale and box-shadow */
+}
+
+
+.card:hover {
+    transform: scale(1.05); /* Makes the card slightly bigger */
+    box-shadow: 0px 0px 20px #FF8B28; /* Changes the glow around the card to the specific shade of blue */
+}
+
+
+#courses-section {
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+
+.card.coming-soon {
+    position: relative;
+}
+
+.card.coming-soon::before {
+    content: "Coming Soon";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 1;
+}
+	
+#courses-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black; /* Adjust the text color to contrast with the red background */
+}
+	
+h5 {
+    font-size: 20px;
+    color: #555;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-custom {
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+	/* Button styling for Beginner Web Development */
+#courses-section .col-md-4:nth-child(1) .btn-custom {
+    background-color: #ffb16b; /* Lightest Orange */
+    color: #fff; /* White text */
+    border: none;
+}
+
+/* Disable button for Intermediate AI */
+#courses-section .col-md-4:nth-child(2) .btn-custom {
+    pointer-events: none; /* Disables click events */
+    opacity: 0.5; /* Changes the button to look disabled */
+}
+
+/* Disable button for Advanced Distributed Database */
+#courses-section .col-md-4:nth-child(3) .btn-custom {
+    pointer-events: none; /* Disables click events */
+    opacity: 0.5; /* Changes the button to look disabled */
+}
+
+/* Hover effect for all custom buttons */
+#courses-section .btn-custom:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* End of Courses Section */
+	
+/* FAQ */
+
+/* FAQ */
+
+.card-header .btn {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.card-header {
+    cursor: pointer;
+	    padding: 20px 20px;
+}
+	
+.card-body-faq {
+    padding: 32px 20px;
+		padding-left: 35px;
+}
+.faq-section {
+    background-color: #f9f9f9;
+	
+}
+.faq-section .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+	
+#faqAccordion .btn-link:focus, 
+#faqAccordion .btn-link:active {
+    box-shadow: none;
+    outline: none;
+    color: inherit; /* This will ensure the text color remains the same. Adjust as needed. */
+    background-color: transparent; /* Ensures the background remains transparent */
+}
+
+/* End of FAQ */
+	
+/* Footer */
+
+.card-header .btn {
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+	
+.custom-footer {
+    background-color: #1e1e1e; /* Dark Blue Background */
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+}
+	
+.brand-name {
+    font-size: 2rem;
+    color: #FF8B28; /* Your orange color */
+}
+
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.custom-footer a:hover {
+    text-decoration: none;
+    color: #FF8B28; /* Your orange color for hover effect */
+}
+
+.custom-footer h2 {
+    margin-top: 30px;
+	  color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #fff; /* Slightly lighter than the background for a subtle border */
+    padding-top: 20px;
+}
+
+.custom-footer ul {
+    list-style-type: none;
+    padding-left: 0; /* Removes the default padding */
+}
+
+.custom-footer li {
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+/* End of Footer */
+	
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #f8f9fa;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+	
+</style>
+</head>
+<body>
+	
+<!-- Nav Bar -->
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://drive.google.com/uc?export=view&id=1l2Ouf50TWQ0fI4-vpabM46ruI2bEG8td" alt="" width="24" height="24" class="d-inline-block align-text-top">
+      BuildCodeEasy
+    </a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#features-section">Features</a>
+        <a class="nav-link" href="#courses-section">Courses</a>
+				<a class="nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Team.html?env=html">Team</a>
+				<a class="nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Partnerships.html?env=html">Partnership</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a class="btn btn-primary nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Sign-Up.html?env=html" style="background-color: #007BFF; color: #fff; margin-right: 8px;">Purchase</a>
+        <a class="btn btn-outline-secondary nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Login.html?env=html" style="border-color: #007BFF; color: #007BFF;">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- End of Nav Bar -->
+	
+<!-- Hero Section -->
+	
+<section class="bg-light py-5">
+	<div id="particles-js-hero"></div> <!-- Particles placed here, spanning the section -->
+    <div class="container" style="position: relative; z-index: 1;"> <!-- Positioning and z-index to layer it on top of particles -->
+       <div class="row align-items-center">
+            
+            <!-- Left Content -->
+            <div class="col-lg-6 text-center text-lg-left">
+                <h1>Welcome to BuildCodeEasy</h1>
+                <p class="lead">Become a PRO for just $30!</p>
+                <p>Skip the steep prices of bootcamps. With BuildCodeEasy, access top-tier tutorials crafted by experienced engineers, all for a reasonable one-off fee.</p>
+                <a href="#courses-section" class="btn btn-primary mb-3">Try Today!</a>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="col-lg-6">
+                <img src="https://drive.google.com/uc?export=view&id=1j1QqBNOtYFUhqsRR-iV_-TVZU_RjeYt4" alt="Hero Illustration" class="img-fluid animated">
+            </div>https://drive.google.com/file/d/15RrG7iz8ElHzuIyzlDkummQr_w3BR55H/view?usp=sharing
+        </div>
+    </div>
+</section>
+    <div class="waves-container">
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+
+	<!-- After the waves container -->
+	
+<div class="card-container" id="features-section" style="background-color: #FF8B28; padding: 50px 0;">
+    <div class="container">
+			  <div class="row justify-content-center mb-5"> <!-- Centered and with margin-bottom -->
+            <h1 class="text-center font-weight-bold">Our Features</h1>
+        </div>
+        
+			<div class="row">
+            
+					<!-- First Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded-card">
+									  <img src="https://drive.google.com/uc?export=view&id=131PKbU-AyeSVi4VmbNtWfFtD061G8l_k" alt="Small Image" class="small-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Affordability</h5>
+                        <p class="card-text">Experience top-tier coding education without breaking the bank, ensuring everyone has the opportunity to succeed.</p>
+                    </div>
+                </div>
+						</div>
+
+            <!-- Second Card -->
+						<div class="col-md-4 mb-4">
+								<div class="card rounded-card">
+										<img src="https://drive.google.com/uc?export=view&id=1PbtgaQmiB2wjIiArDU5FkXNbkpNxPhO3" alt="Small Image" class="small-image">
+										<div class="card-body">
+												<h5 class="card-title">Rapid Mastery</h5>
+												<p class="card-text">Accelerate your learning curve with our curated curriculum, enabling you to grasp complex coding concepts swiftly.</p>
+										</div>
+								</div>
+						</div>
+
+            <!-- Third Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded-card">
+									  <img src="https://drive.google.com/uc?export=view&id=1AVAmjgGrZEIVM9Ydb9BkQDnx0nV0e_Vh" alt="Small Image" class="small-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Peer Collaboration</h5>
+                        <p class="card-text">Engage in enriching team projects and discussions that mimics real-world tech scenarios.</p>
+                    </div>
+                </div>
+            </div>
+   
+					            <div class="col-md-4 mt-4">
+                <div class="card rounded-card">
+										<img src="https://drive.google.com/uc?export=view&id=17Sq-vWDYDvyvuFcDc6jFYF85ub9g3l6r" alt="Small Image" class="small-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Self-Paced</h5>
+                        <p class="card-text">Learn at a pace that suits you, with flexible modules and resources designed to adapt to both your strengths and areas of growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Card -->
+            <div class="col-md-4 mt-4">
+                <div class="card rounded-card">
+										<img src="https://drive.google.com/uc?export=view&id=1Qz9mPswvvnt8qIuAON9h4nS-ffaHD6aY" alt="Small Image" class="small-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cutting-edge Tech</h5>
+                        <p class="card-text">Stay ahead of the curve by immersing yourself in the latest technologies, ensuring you're always in demand in the ever-evolving tech industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixth Card -->
+            <div class="col-md-4 mt-4">
+                <div class="card rounded-card">
+								<img src="https://drive.google.com/uc?export=view&id=1MrWW2Z0fYyDDBNyqV1MfZIq3QEV5316y" alt="Small Image" class="small-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Stunning Portfolio</h5>
+                        <p class="card-text">Stand out in the job market with a portfolio that showcases your skills, creativity, and innovative solutions to real-world challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="waves-container waves-flipped">
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+	
+	
+<section class="curriculum-section bg-light">
+    <div id="particles-js-curriculum"></div> <!-- This is the particles div -->
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="row">
+<div class="col-lg-6 d-flex align-items-center justify-content-center">
+    <img src="https://drive.google.com/uc?export=view&id=18oOcq5mWwo94EYuLZvVzEdIQJkSw1Gmg" alt="Curriculum Image" class="curriculum-image animated">
+</div>
+
+            <div class="col-lg-6">
+                <div class="curriculum-content">
+                    <span class="curriculum-badge">Curriculum</span>
+                    <h2>What Sets Our Curriculum Apart?</h2>
+                    <div class="feature">
+                        <h3>Affordability Meets Efficiency</h3>
+                        <p style="text-align: justify;">Embark on an educational adventure that's as economical as it is efficient. At BuildCodeEasy, we ensure that your investment yields high returns in skill acquisition and practical knowledge. Our courses are tailored to inject profound value into your learning journey, offering significant skill enhancements at a fraction of the cost, seamlessly integrating into the rhythm of your bustling lifestyle.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Complexity Made Easy</h3>
+                        <p style="text-align: justify;">As cloud technologies become more intricate and indispensable, BuildCodeEasy illuminates the path to understanding. Our web development bootcamp is meticulously designed to equip you with the knowledge to create bespoke and scalable cloud-based websites and applications effortlessly. We transform complexity into simplicity, enabling you to confidently navigate and harness the power of the cloud.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Harnessing Cutting-Edge Technologies</h3>
+                        <p style="text-align: justify;">At BuildCodeEasy, we propel you beyond current trends, immersing you in the latest technologies that set you apart in the coding world. Our bootcamp doesn't just teach you to meet the standard — it pushes you to exceed it by leveraging the newest advancements in tech. Stay at the forefront, master contemporary tools, and optimize your potential. With us, you're not just keeping pace; you're setting the pace, ensuring that when it comes to building complex websites, you're equipped with the knowledge to use groundbreaking technologies that give you the edge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	
+<!-- Courses Section -->
+	
+<!-- Intro to Courses Graphic -->
+
+<section id="courses-section" class="payment bg-light">
+	<div id="particles-js-courses"></div> 
+		<div class="container" style="position: relative; z-index: 1;">
+					 
+	<!-- End of Intro to Courses Graphic -->
+					
+			<div class="container">
+				<div class="row align-items-center mb-5 intro-graphic">
+					<div class="col-lg-6">
+						<h1>Chose a bootcamp that best fits your skill level...</h1>
+						<p class="mb-4">Earn a <strong>Certificate</strong> for each course!</p>
+					</div>
+					<div class="col-lg-6 center-image">
+						<img src="https://drive.google.com/uc?export=view&id=1jdGSrSXD1tBw4NJHklTzv-50cn8LAQLl" alt="Programming Journey" class="img-fluid intro-image">
+					</div>
+				</div>
+			</div>
+
+	<!-- End of Intro Graphic -->
+			
+	<!-- Courses Cards -->
+					 
+        <div class="row">
+					
+            <!-- Web Development -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>Beginner</h5>
+                        <h2>Web Development</h2>
+												<p>8 Modules<p>
+												<p>Deploy to AWS<p>
+												<p>Certificate included<p>
+                        <a href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Sign-Up.html?env=html" class="btn btn-custom">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+
+					<!-- Intermediate AI button with disabled style and tooltip -->
+					<div class="col-md-4">
+							<div class="card text-center card-highlight coming-soon">
+									<div class="card-body">
+											<h5>Intermediate</h5>
+											<h2>Building AI</h2>
+											<p>11 Modules<p>
+											<p>Build AI Models<p>
+											<p>Certificate included<p>
+											<!-- Added title attribute for tooltip -->
+											<a href="#" class="btn btn-custom" title="This course is not available yet">Choose plan</a>
+									</div>
+							</div>
+					</div>
+
+					<!-- Advanced Distributed Database button with disabled style and tooltip -->
+					<div class="col-md-4">
+							<div class="card text-center coming-soon">
+									<div class="card-body">
+											<h5>Advanced</h5>
+											<h2>Distributed Database</h2>
+											<p>12 Modules<p>
+											<p>Master SQL syntax<p>
+											<p>Certificate included<p>
+											<!-- Added title attribute for tooltip -->
+											<a href="#" class="btn btn-custom" title="This course is not available yet">Choose plan</a>
+									</div>
+							</div>
+					</div>
+				</div>
+		</div>
+</section>
+	
+<!-- End of Courses Section -->
+	
+<!-- FAQ -->
+
+	
+<section class="faq-section py-5">
+	<div id="particles-js-faq"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div id="faqAccordion">
+            <div class="faq-card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+   								 What is BuildCodeEasy? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        BuildCodeEasy is an online coding bootcamp meticulously crafted by industry experts, dedicated to imparting real-time, applicable coding skills at an accessible rate.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I get started? <span class="icon">+</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Simply register for an account and dive into our range of courses.
+                    </div>
+                </div>
+            </div>
+					
+					            <div class="faq-card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> Who is BulidCodeEasy for? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+											BuildCodeEasy welcomes learners of all skill levels. While our current courses cater to beginners and provide valuable insights for experienced developers, we are also gearing up to introduce advanced courses in the near future.                    </div>
+                </div>
+            </div>
+					            <div class="faq-card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+   								 How will I learn? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Each bootcamp is module-based, offering a self-paced journey to a comprehensive understanding of real-time, applicable coding techniques.
+                    </div>
+                </div>
+            </div>
+					            <div class="faq-card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+   								 How does payment work? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Payment is facilitated through a one-time transaction using our Stripe integration, ensuring a safe and secure process for our users.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+	
+<!-- End of FAQ -->
+	
+<!-- Footer Section -->
+
+<footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Brand Section -->
+            <div class="col-lg-3">
+                <h1 class="brand-name">BuildCodeEasy</h1>
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="https://www.tiktok.com/@build.code.easy?_t=8gybouBcCUI&_r=1" class="social-icon">TikTok</a>
+            </div>
+
+            <!-- Links Sections -->
+            <div class="col-lg-3">
+                <h2>Info</h2>
+                <ul>
+                    <li><a href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Team.html?env=html#">team</a></li>
+									  <li><a href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Sign-Up.html?env=html">purchase</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">support@buildcodeeasy.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2023 All Rights Reserved © BuildCodeEasy</p>
+        </div>
+    </div>
+</footer>
+	
+<!-- End of Footer Section -->
+	
+<!-- JS -->
+	
+<a href="#" class="back-to-top" role="button" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+
+<script>
+  
+	$(document).ready(function() {
+    // Show or hide the sticky footer button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) {
+        $('.back-to-top').fadeIn();
+      } else {
+        $('.back-to-top').fadeOut();
+      }
+    });
+    
+    // Animate the scroll to top
+    $('.back-to-top').click(function(event) {
+      event.preventDefault();
+      
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      let target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+	<script>
+        particlesJS('particles-js-hero', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+			
+			 particlesJS('particles-js-curriculum', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+			
+			 particlesJS('particles-js-faq', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+					 particlesJS('particles-js-courses', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+		
+    </script>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KOBJ1Y9GC8DFpP7lkwjxppwpamM9qE1X5C8fH9w6I5N4kpJN4tELfUJ3JNu9VHx9" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- End of JS -->
+	
+</body>
+</html>

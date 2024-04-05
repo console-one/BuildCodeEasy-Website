@@ -1,0 +1,623 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildCodeEasy - Team</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		
+<style>
+	
+/* Particles */
+
+#particles-js-team, #particles-js-faq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* End of Particles */
+.py-5 {
+    position: relative;
+    z-index: 1;
+}
+.team-card {
+	  max-width: 350px; /* Set a max-width for the card */
+    margin: 0 auto; /* Center the card within the column */
+    border: 2px solid orange; /* Orange outline */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.card-img-top {
+    border-top-left-radius: 13px; /* Keep the image rounded */
+    border-top-right-radius: 13px;
+}
+
+/* FAQ */
+
+.card-header .btn {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.card-header {
+    cursor: pointer;
+	    padding: 20px 20px;
+}
+	
+.card-body-faq {
+    padding: 32px 20px;
+		padding-left: 35px;
+}
+.faq-section {
+    background-color: #f9f9f9;
+	
+}
+.faq-section .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+	
+#faqAccordion .btn-link:focus, 
+#faqAccordion .btn-link:active {
+    box-shadow: none;
+    outline: none;
+    color: inherit; /* This will ensure the text color remains the same. Adjust as needed. */
+    background-color: transparent; /* Ensures the background remains transparent */
+}
+
+/* End of FAQ */
+	
+/* Footer */
+
+.card-header .btn {
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-header {
+    cursor: pointer;
+}
+	
+.custom-footer {
+    background-color: #1e1e1e; /* Dark Blue Background */
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+}
+	
+.brand-name {
+    font-size: 2rem;
+    color: #FF8B28; /* Your orange color */
+}
+
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.custom-footer a:hover {
+    text-decoration: none;
+    color: #FF8B28; /* Your orange color for hover effect */
+}
+
+.custom-footer h2 {
+    margin-top: 30px;
+	  color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #fff; /* Slightly lighter than the background for a subtle border */
+    padding-top: 20px;
+}
+
+.custom-footer ul {
+    list-style-type: none;
+    padding-left: 0; /* Removes the default padding */
+}
+
+.custom-footer li {
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.py-5 {
+	    background-color: #f9f9f9;
+	}
+/* End of Footer */
+	
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 5px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to your button when it's supposed to be visible */
+#myBtn.show {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+    </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://drive.google.com/uc?export=view&id=1l2Ouf50TWQ0fI4-vpabM46ruI2bEG8td" alt="" width="24" height="24" class="d-inline-block align-text-top">
+      BuildCodeEasy
+    </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Bootcamp.html?env=html">Home</a>
+				<a class="nav-link active" aria-current="page" href="#">Team</a>
+				<a class="nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Partnerships.html?env=html">Partnership</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a class="btn btn-primary nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Sign-Up.html?env=html" style="background-color: #007BFF; color: #fff; margin-right: 8px;">Purchase</a>
+        <a class="btn btn-outline-secondary nav-link" href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Login.html?env=html" style="border-color: #007BFF; color: #007BFF;">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5">
+		<div id="particles-js-team"></div>
+    <div class="container">
+        <h2 class="text-center mb-5">Meet the Team</h2>
+        <div class="row">
+
+            <!-- Team Member 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card team-card">
+                    <img src="https://drive.google.com/uc?export=view&id=1C2lYvsH7YraVaE4QPU_TRVcr2oVs9TLT" class="card-img-top" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrew Chalmers</h5>
+												<h6>Developer</h6>
+                        <p class="card-text">Ex Software Development Manager @ Amazon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card team-card">
+                    <img src="https://drive.google.com/uc?export=view&id=1Ol716Qd5H96naIhi4HdB2v7rMveGNlKW" class="card-img-top" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Brett Chalmers</h5>
+												<h6>Lecturer</h6>
+                        <p class="card-text">Ex Sales Development Representative @ Spotwork</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+	
+<section class="faq-section py-5">
+	<div id="particles-js-faq"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div id="faqAccordion">
+            <div class="faq-card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+   								 What is BuildCodeEasy? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        BuildCodeEasy is an online coding bootcamp meticulously crafted by industry experts, dedicated to imparting real-time, applicable coding skills at an accessible rate.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I get started? <span class="icon">+</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Simply register for an account and dive into our range of courses.
+                    </div>
+                </div>
+            </div>
+					
+					            <div class="faq-card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> Who is BulidCodeEasy for? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+											BuildCodeEasy welcomes learners of all skill levels. While our current courses cater to beginners and provide valuable insights for experienced developers, we are also gearing up to introduce advanced courses in the near future.                    </div>
+                </div>
+            </div>
+					            <div class="faq-card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+   								 How will I learn? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Each bootcamp is module-based, offering a self-paced journey to a comprehensive understanding of real-time, applicable coding techniques.
+                    </div>
+                </div>
+            </div>
+					            <div class="faq-card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+   								 How does payment work? <span class="icon">+</span>
+									</button>
+                   </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body-faq">
+                        Payment is facilitated through a one-time transaction using our Stripe integration, ensuring a safe and secure process for our users.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+	
+<!-- End of FAQ -->
+	
+<!-- Footer Section -->
+
+<footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Brand Section -->
+            <div class="col-lg-3">
+                <h1 class="brand-name">BuildCodeEasy</h1>
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="https://www.tiktok.com/@build.code.easy?_t=8gybouBcCUI&_r=1" class="social-icon">TikTok</a>
+            </div>
+
+            <!-- Links Sections -->
+            <div class="col-lg-3">
+                <h2>Info</h2>
+                <ul>
+                    <li><a href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Team.html?env=html#">team</a></li>
+									  <li><a href="https://ioke2a2qkg.execute-api.us-east-1.amazonaws.com/stage1/codebank/exe/1/BuildCodeEasy-Sign-Up.html?env=html">purchase</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">support@buildcodeeasy.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2023 All Rights Reserved © BuildCodeEasy</p>
+        </div>
+    </div>
+</footer>
+
+<!-- End of Footer Section -->
+
+<!-- Back to Top Button with SVG Chevron -->
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; cursor: pointer; padding: 15px; border-radius: 4px; background-color: transparent;">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 16L12 6L22 16" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("myBtn").classList.add("show");
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("myBtn").classList.remove("show");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+	<script>
+        particlesJS('particles-js-team', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+			
+			 particlesJS('particles-js-faq', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#FFA500" /* Adjusted to orange */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FFA500" /* Adjusted to orange */
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFA500", /* Adjusted to orange */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+						"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+										"onhover": {
+												"enable": false,
+												"mode": "repulse"
+										},
+										"onclick": {
+												"enable": false,
+												"mode": "push"
+										},
+										"resize": true
+								},
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+	</script>
+</body>
+</html>
